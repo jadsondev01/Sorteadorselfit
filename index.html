@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sorteador Selfit Academias</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1 class="title">Sorteador Selfit Acamdeias Comercial</h1>
+        <div class="input-container">
+            <label for="numGanhadores" class="label">Número de Ganhadores:</label>
+            <input type="number" id="numGanhadores" class="input" min="1" value="1">
+        </div>
+        <textarea id="novoNome" class="textarea" placeholder="Digite os nomes, um por linha"></textarea>
+        <button onclick="adicionarNomes()" class="button">Adicionar Nomes</button>
+        <button onclick="sortear()" class="button">Sortear Ganhadores</button>
+        <ul id="nomes" class="nomes"></ul>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
